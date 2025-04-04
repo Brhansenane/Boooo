@@ -10,6 +10,13 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 dotenv.config();
+export default defineConfig({
+  resolve: {
+    alias: {
+      path: 'path-browserify'
+    }
+  }
+})
 
 const getGitInfo = () => {
   try {
